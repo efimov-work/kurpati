@@ -1,0 +1,8 @@
+:HL["/kurpati/_next/static/media/1fc5a77b95105241-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/kurpati/_next/static/media/838a92336778c118-s.p.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
+:HL["/kurpati/_next/static/media/a0ed163957d90fa1-s.p.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
+:HL["/kurpati/_next/static/media/e4e47b4f5d3dfe7e-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/kurpati/_next/static/css/e2b8f3a29eb00176.css","style"]
+2:[["children",{"s":"__PAGE__","h":160}]]
+1:[["children",{"s":"privacy","h":96,"c":"$Q2"}]]
+0:{"b":"gLq6EdUE4kjGgIrK_r_qg","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
