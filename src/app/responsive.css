@@ -15,7 +15,6 @@
     .hero { min-height: 760px; }
     .hero h1 { font-size: 96px; }
     .hero-content { padding-top: 170px; }
-    .hero-index { right: 24px; }
     .place-intro { gap: 7%; }
     .place-main-photo img { height: 420px; }
     .place-detail-photo img { height: 250px; }
@@ -107,8 +106,6 @@
     .hero-description p { font-size: 15px; }
     .hero-description .button { padding-inline: 23px; min-height: 54px; font-size: 15px; gap: 50px; }
     .hero-bottom { bottom: 27px; gap: 30px; }
-    .hero-bottom > p { margin-left: auto; }
-    .hero-side-note, .hero-index { display: none; }
     .scroll-link { font-size: 11px; gap: 12px; }
     .scroll-icon { height: 45px; width: 33px; }
     .place-intro { grid-template-columns: 1fr; gap: 30px; }
@@ -259,7 +256,6 @@
     h2, .location-heading h2 { font-size: 38px; }
     .hero-description p { font-size: 14px; }
     .hero-bottom { gap: 14px; }
-    .hero-bottom > p { font-size: 9px; }
     .place-collage { grid-template-columns: 1.5fr 1fr; }
     .place-main-photo img { height: 260px; }
     .place-detail-photo img { height: 140px; }

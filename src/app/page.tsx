@@ -23,8 +23,7 @@ export default function Page() {
                         <h1 id="hero-title"><span>Море.</span><span>Архитектура.</span><span><em>Ваше время.</em></span></h1>
                         <div className="hero-description"><p>Есть места, в которых хочется<br />остаться чуть дольше. Курпаты.</p><button className="button button-cream" data-request="Обратный звонок с первого экрана">Перезвоните мне <Icon /></button></div>
                     </div>
-                    <div className="container hero-bottom"><a className="scroll-link" href="#place"><span className="scroll-icon"><Icon name="chevron" /></span>Познакомиться с местом</a><p>44°26′43″ с. ш.<br />34°08′01″ в. д.</p><span className="hero-side-note">Знакомство, которое начинается с удивления</span></div>
-                    <a className="hero-index" href="#gallery">Галерея<span>06 ракурсов</span></a>
+                    <div className="container hero-bottom"><a className="scroll-link" href="#place"><span className="scroll-icon"><Icon name="chevron" /></span>Познакомиться с местом</a></div>
                 </section>
 
                 <section className="place section" id="place" aria-labelledby="place-title">

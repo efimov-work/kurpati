@@ -85,10 +85,6 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px soli
 .scroll-link { display: flex; align-items: center; gap: 14px; }
 .scroll-icon { display: flex; width: 43px; height: 59px; border: 1px solid #ffffff6b; border-radius: 25px; align-items: center; justify-content: center; }
 .scroll-icon .icon { width: 19px; animation: scroll-hint 2.2s infinite; }
-.hero-bottom > p { font-size: 10px; color: #ffffffbb; }
-.hero-side-note { margin-left: auto; text-align: right; max-width: 195px; line-height: 1.6; color: #ffffffc7; }
-.hero-index { position: absolute; right: 49px; top: 48%; display: flex; align-items: center; gap: 7px; font-size: 13px; writing-mode: vertical-rl; }
-.hero-index span { opacity: .5; }
 
 .place { padding-top: 132px; padding-bottom: 88px; }
 .place-intro { display: grid; grid-template-columns: 1.1fr 1fr; gap: 12%; align-items: start; }
