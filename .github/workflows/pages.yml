@@ -1,0 +1,41 @@
+name: Publish reviewed site
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '26'
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - run: npm run export
+        env:
+          NEXT_PUBLIC_SITE_URL: https://efimov-work.github.io
+          NEXT_PUBLIC_BASE_PATH: /kurpati
+          SITE_NOINDEX: '0'
+          NEXT_PUBLIC_LEADS_ENABLED: '0'
+      - run: npm run test:export
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+      - id: deployment
+        uses: actions/deploy-pages@v4

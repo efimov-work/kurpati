@@ -1,0 +1,263 @@
+@media (min-width: 1800px) {
+    .hero-content { padding-top: 200px; }
+    .hero h1 { font-size: 124px; }
+    .hero-media img { object-position: 65% 62%; }
+}
+
+@media (max-width: 1200px) {
+    .container { width: calc(100% - 80px); }
+    .header-inner { margin-inline: 30px; gap: 20px; }
+    .desktop-nav { gap: 20px; font-size: 14px; }
+    .brand > span { font-size: 28px; }
+    .brand small { font-size: 9px; }
+    .brand svg { width: 42px; height: 42px; }
+    .button-header { gap: 18px; font-size: 13px; }
+    .hero { min-height: 760px; }
+    .hero h1 { font-size: 96px; }
+    .hero-content { padding-top: 170px; }
+    .hero-index { right: 24px; }
+    .place-intro { gap: 7%; }
+    .place-main-photo img { height: 420px; }
+    .place-detail-photo img { height: 250px; }
+    .place-note { right: 0; gap: 12px; }
+    .orbit-diagram { width: 90px; height: 90px; }
+    .experience-layout { grid-template-columns: 1fr 2.4fr; gap: 5%; }
+    .experience-tabs > button { font-size: 21px; gap: 11px; }
+    .experience-image img { height: 400px; }
+    .architecture-bottom { grid-template-columns: .65fr 1.4fr 1fr; gap: 4%; }
+    .room-photo { height: 300px; }
+    .gallery-track { padding-inline: 40px; }
+    .gallery-photo { height: 365px; }
+    .location-grid { gap: 5%; }
+}
+
+@media (max-width: 1000px) {
+    .section { padding-block: 95px; }
+    .desktop-nav { display: none; }
+    .header-inner { min-height: 90px; }
+    .header-inner .button-header { margin-left: auto; }
+    .menu-toggle { display: inline-flex; align-items: center; justify-content: center; }
+    .mobile-nav { display: flex; flex-direction: column; padding: 20px 40px 35px; color: var(--ink); background: var(--cream); box-shadow: 0 30px 40px #153c4b20; }
+    .mobile-nav > a { display: flex; align-items: center; gap: 25px; padding-block: 18px; border-bottom: 1px solid var(--line); font-family: var(--font-display), sans-serif; font-size: 29px; font-weight: 300; }
+    .mobile-nav > a span { color: var(--muted); font-family: var(--font-body), sans-serif; font-size: 11px; }
+    .mobile-nav > a .icon { margin-left: auto; }
+    .mobile-nav > .button { margin-top: 22px; align-self: flex-start; }
+    .place-copy .lead { font-size: 22px; }
+    .place-copy { padding-top: 43px; }
+    .place-collage { gap: 7%; grid-template-columns: 1.5fr 1fr; }
+    .place-main-photo img { height: 410px; }
+    .place-detail-photo img { height: 230px; }
+    .place-note { top: -3px; right: 1%; }
+    .place-note p { font-size: 11px; }
+    .facts strong { font-size: 49px; }
+    .facts > div { padding-left: 24px; }
+    .experience-layout { grid-template-columns: 1fr; }
+    .experience-tabs { display: flex; gap: 24px; margin-bottom: 30px; border-bottom: 1px solid #ffffff25; }
+    .experience-tabs > button { width: auto; flex: 1; border: 0; padding: 0 0 18px; min-height: auto; font-size: 20px; white-space: nowrap; position: relative; }
+    .experience-tabs > button:first-child { border: 0; }
+    .experience-tabs .icon { display: none; }
+    .experience-tabs > button.is-active::after { content: ''; position: absolute; bottom: -1px; left: 0; right: 0; height: 1px; background: var(--cream); }
+    .experience-image img { height: 440px; }
+    .architecture-bottom { grid-template-columns: 1fr 2fr; gap: 25px; }
+    .architecture-bottom .text-link { grid-column: 2; justify-self: start; }
+    .room-grid { gap: 24px; }
+    .room-photo { height: 270px; }
+    .room-info p { font-size: 13px; }
+    .day-story { min-height: 570px; }
+    .gallery-card { flex-basis: 65%; }
+    .location { padding-top: 0; }
+    .location-grid { gap: 40px; }
+    .location-copy h2 { font-size: 44px; }
+    .faq-grid { grid-template-columns: .8fr 1.2fr; gap: 7%; }
+    .faq-list summary { font-size: 17px; gap: 10px; }
+    .contact-section { min-height: 630px; }
+    .footer-main .brand > span { font-size: 25px; }
+    .back-to-top { font-size: 12px; gap: 10px; }
+}
+
+@media (max-width: 760px) {
+    .container { width: calc(100% - 44px); }
+    .section { padding-block: 74px; }
+    h2 { font-size: 49px; }
+    .eyebrow { font-size: 12px; margin-bottom: 24px; }
+    .header-inner { margin-inline: 22px; min-height: 83px; gap: 13px; }
+    .header.is-scrolled .header-inner { min-height: 73px; }
+    .brand svg { height: 37px; width: 37px; }
+    .brand > span { font-size: 27px; }
+    .brand small { font-size: 8px; }
+    .brand { gap: 10px; }
+    .button-header { min-height: 42px; font-size: 12px; padding: 11px 13px; gap: 12px; }
+    .button-header .icon { width: 16px; height: 16px; }
+    .menu-toggle { width: 32px; padding: 0; }
+    .mobile-nav { padding-inline: 24px; }
+    .hero { min-height: 770px; max-height: 1050px; height: 100svh; }
+    .hero-content { padding-top: 162px; }
+    .hero h1 { font-size: clamp(65px, 11.7vw, 86px); }
+    .hero-location { font-size: 12px; margin-bottom: 28px; }
+    .hero-media img { height: 100%; object-position: 67% 45%; }
+    .hero-shade { background: linear-gradient(90deg, #0c3a4c85, #0c3a4c15), linear-gradient(0deg, #0b3344d0, transparent 57%, #0b33441c); }
+    .hero-description { flex-direction: column; align-items: flex-start; gap: 24px; margin-top: 30px; }
+    .hero-description p { font-size: 15px; }
+    .hero-description .button { padding-inline: 23px; min-height: 54px; font-size: 15px; gap: 50px; }
+    .hero-bottom { bottom: 27px; gap: 30px; }
+    .hero-bottom > p { margin-left: auto; }
+    .hero-side-note, .hero-index { display: none; }
+    .scroll-link { font-size: 11px; gap: 12px; }
+    .scroll-icon { height: 45px; width: 33px; }
+    .place-intro { grid-template-columns: 1fr; gap: 30px; }
+    .place-copy { padding-top: 0; max-width: 540px; }
+    .place-copy .lead { font-size: 23px; }
+    .place-copy > p + p { font-size: 15px; margin-top: 20px; }
+    .place-copy .text-link { margin-top: 24px; }
+    .place-collage { margin-top: 45px; grid-template-columns: 1.55fr 1fr; gap: 19px; }
+    .place-main-photo img { height: 350px; }
+    .place-detail-photo img { height: 200px; }
+    .place-detail-photo { padding-top: 140px; }
+    .place-note { top: 3px; right: 1%; flex-direction: column; gap: 8px; align-items: flex-start; }
+    .orbit-diagram { height: 73px; width: 73px; }
+    .place-note p { font-size: 10px; }
+    figure figcaption { font-size: 10px; }
+    .facts { margin-top: 45px; padding-top: 0; grid-template-columns: repeat(2,1fr); }
+    .facts > div { padding: 25px 0; gap: 13px; border-bottom: 1px solid var(--line); border-left: 0; }
+    .facts > div:first-child { border-bottom: 1px solid var(--line); }
+    .facts > div:nth-child(even) { padding-left: 25px; border-left: 1px solid var(--line); }
+    .facts strong { font-size: 47px; }
+    .facts span { font-size: 12px; }
+    .experience { padding-block: 75px; }
+    .experience-heading { display: block; margin-bottom: 34px; }
+    .experience-heading > p:last-child { margin-top: 25px; padding: 0; font-size: 14px; }
+    .experience-tabs { gap: 23px; overflow-x: auto; scrollbar-width: none; margin-bottom: 22px; }
+    .experience-tabs > button { flex: 0 0 auto; font-size: 19px; gap: 8px; }
+    .experience-tabs > button > span { font-size: 8px; }
+    .experience-image img { height: 340px; }
+    .photo-caption { left: 15px; bottom: 15px; font-size: 10px; max-width: calc(100% - 30px); }
+    .experience-description { grid-template-columns: 1fr; gap: 14px; padding-top: 22px; }
+    .experience-description h3 { font-size: 28px; }
+    .experience-description p { font-size: 14px; }
+    .architecture-heading { display: block; margin-bottom: 35px; }
+    .architecture-heading > p:last-child { margin-top: 25px; font-size: 15px; padding: 0; }
+    .architecture-panorama { height: 460px; }
+    .architecture-panorama > img { height: 100%; object-position: 63% center; }
+    .architecture-label { bottom: 22px; right: 22px; gap: 15px; padding: 14px 19px; }
+    .architecture-label p { font-size: 21px; }
+    .architecture-label small { font-size: 10px; }
+    .architecture-bottom { grid-template-columns: 1fr; gap: 18px; margin-top: 25px; }
+    .architecture-bottom .text-link { grid-column: 1; font-size: 14px; margin-top: 7px; }
+    .architecture-bottom p { max-width: 500px; font-size: 14px; }
+    .section-heading { flex-direction: column; align-items: flex-start; gap: 28px; margin-bottom: 33px; }
+    .section-intro { max-width: 450px; font-size: 15px; }
+    .room-grid { grid-template-columns: 1fr; gap: 40px; }
+    .room-photo { height: 340px; }
+    .room-info { padding-top: 20px; gap: 20px; }
+    .room-info h3 { font-size: 33px; }
+    .room-info p { max-width: 430px; font-size: 14px; }
+    .rooms-footnote { flex-direction: column; align-items: flex-start; gap: 22px; margin-top: 35px; }
+    .rooms-footnote p { font-size: 11px; }
+    .day-story { min-height: 610px; }
+    .day-content { padding-block: 75px 65px; }
+    .day-content h2 { font-size: 61px; }
+    .day-moments { margin-top: 70px; gap: 0; }
+    .day-moments p { font-size: 19px; }
+    .day-moments span { font-size: 11px; }
+    .gallery-controls { padding: 0; align-self: stretch; }
+    .gallery-controls > span { margin-right: auto; }
+    .circle-button { width: 47px; height: 47px; }
+    .gallery-track { padding-inline: 22px; gap: 16px; }
+    .gallery-card { flex-basis: 85%; }
+    .gallery-photo { height: 320px; }
+    .gallery-caption { font-size: 13px; padding-block: 14px; }
+    .lightbox { padding: 75px 16px 95px; }
+    .lightbox figure > img { max-height: calc(100dvh - 240px); }
+    .lightbox figcaption { flex-direction: column; gap: 7px; font-size: 15px; }
+    .lightbox .lightbox-previous { left: 22px; top: auto; bottom: 24px; }
+    .lightbox .lightbox-next { right: 22px; top: auto; bottom: 24px; }
+    .lightbox-close { right: 17px; top: 17px; }
+    .location { padding-top: 0; }
+    .location-grid { grid-template-columns: 1fr; gap: 40px; }
+    .location-copy h2 { font-size: 48px; }
+    .location-copy > p:not(.eyebrow) { max-width: 475px; font-size: 15px; margin-top: 25px; }
+    .location-copy address { font-size: 14px; margin-top: 25px; }
+    .location-copy .text-link { font-size: 14px; }
+    .faq { padding-top: 12px; }
+    .faq-grid { grid-template-columns: 1fr; gap: 35px; }
+    .faq-grid > div > p:not(.eyebrow) { font-size: 15px; margin-top: 22px; }
+    .faq-list summary { padding-block: 24px; font-size: 18px; gap: 13px; }
+    .faq-answer { padding-left: 35px; font-size: 14px; }
+    .contact-section { min-height: 650px; }
+    .contact-content { padding-block: 85px 120px; }
+    .contact-content h2 { font-size: 62px; }
+    .contact-content > p:not(.eyebrow) { font-size: 15px; margin-top: 24px; }
+    .contact-signature { font-size: 185px; right: -4px; bottom: -20px; }
+    .contact-photo img { object-position: 45% center; }
+    .footer { padding-top: 38px; }
+    .footer-main { display: grid; grid-template-columns: 1fr 1fr; gap: 28px 15px; padding-bottom: 28px; }
+    .footer-main > .brand { grid-column: 1 / -1; }
+    .footer-main > div { font-size: 12px; }
+    .back-to-top { justify-self: end; font-size: 11px; gap: 6px; }
+    .footer-bottom { flex-wrap: wrap; font-size: 10px; gap: 15px 20px; }
+    .footer-bottom > p:last-child { margin-left: auto; }
+    .footer-notice { font-size: 9px; margin-top: 20px; }
+    .request-dialog { padding: 48px 28px 24px; }
+    .request-dialog h2 { font-size: 49px; }
+    .dialog-description { font-size: 14px; }
+    .dialog-ornament { right: 35px; width: 100px; height: 100px; }
+    .request-dialog .eyebrow { font-size: 11px; }
+}
+
+@media (max-width: 420px) {
+    .header-inner .button-header { display: none; }
+    .menu-toggle { margin-left: auto; width: 43px; }
+    .hero { min-height: 740px; }
+    .hero h1 { font-size: clamp(56px, 13.7vw, 65px); }
+    .hero-content { padding-top: 154px; }
+    .hero-location { font-size: 11px; }
+    .hero-media img { object-position: 60% center; }
+    .hero-description { margin-top: 30px; gap: 23px; }
+    .hero-description .button { min-width: 230px; }
+    h2 { font-size: 45px; }
+    .place-main-photo img { height: 290px; }
+    .place-detail-photo img { height: 160px; }
+    .place-note { top: 5px; right: 0; }
+    .orbit-diagram { width: 66px; height: 66px; }
+    .place-copy .lead { font-size: 21px; }
+    .place-collage { gap: 15px; }
+    .place-note p { font-size: 9px; }
+    .experience-image img { height: 280px; }
+    .architecture-panorama { height: 370px; }
+    .room-photo { height: 280px; }
+    .room-info p { font-size: 13px; }
+    .day-content h2 { font-size: 56px; }
+    .day-moments p { font-size: 17px; }
+    .gallery-photo { height: 270px; }
+    .location-copy h2 { font-size: 43px; }
+    .contact-content h2 { font-size: 55px; }
+    .faq-list summary { font-size: 16px; }
+    .footer-main { grid-template-columns: 1fr; }
+    .footer-main > .brand { grid-column: 1; }
+    .back-to-top { justify-self: start; }
+}
+
+@media (max-width: 340px) {
+    .container { width: calc(100% - 32px); }
+    .hero h1 { font-size: 47px; }
+    .hero-location { font-size: 10px; gap: 8px; }
+    .hero-content { padding-top: 143px; }
+    h2, .location-copy h2 { font-size: 38px; }
+    .hero-description p { font-size: 14px; }
+    .hero-bottom { gap: 14px; }
+    .hero-bottom > p { font-size: 9px; }
+    .place-collage { grid-template-columns: 1.5fr 1fr; }
+    .place-main-photo img { height: 260px; }
+    .place-detail-photo img { height: 140px; }
+    .place-detail-photo figcaption { font-size: 9px; }
+    .facts strong { font-size: 42px; }
+    .facts > div:nth-child(even) { padding-left: 17px; }
+    .facts span { font-size: 11px; }
+    .day-moments p { font-size: 16px; }
+    .request-dialog { padding-inline: 21px; }
+    .request-dialog h2 { font-size: 43px; }
+}
+
+@media (min-width: 761px) and (max-height: 760px) {
+    .hero { height: 780px; }
+}

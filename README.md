@@ -16,7 +16,8 @@ npm run dev
 ```bash
 npm run check
 npm run build
-npm run export
+npm run pages
+npm run test:export
 ```
 
 ## Обратный звонок
@@ -39,7 +40,7 @@ GitHub Pages не запускает серверный API. Для отправ
 npm run pages
 ```
 
-Команда собирает out и подготавливает локальную ветку gh-pages. Она ничего не отправляет в GitHub. Префикс проекта: /kurpati.
+Команда собирает out и подготавливает локальную ветку gh-pages. Она ничего не отправляет в GitHub. Префикс проекта: /kurpati. Проверка npm run test:export запускается после npm run pages.
 
 Workflow Publish reviewed site запускается только вручную после проверки правок. Отправка исходников в main запускает проверки, но не публикацию.
 

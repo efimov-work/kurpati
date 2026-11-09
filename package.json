@@ -1,0 +1,28 @@
+{
+  "name": "kurpati",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack --hostname 127.0.0.1 --port 3010",
+    "build": "next build --webpack",
+    "start": "node scripts/start.mjs",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm test",
+    "test": "node --test tests/site.test.mjs",
+    "test:lead": "node scripts/lead-qa.mjs",
+    "test:export": "node scripts/static-qa.mjs",
+    "export": "node scripts/export.mjs",
+    "pages": "node scripts/prepare-pages.mjs"
+  },
+  "dependencies": {
+    "next": "^16.4.5",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.3",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "typescript": "5.9.3"
+  }
+}
