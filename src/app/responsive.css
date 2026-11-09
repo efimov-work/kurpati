@@ -28,7 +28,10 @@
     .room-photo { height: 300px; }
     .gallery-track { padding-inline: 40px; }
     .gallery-photo { height: 365px; }
-    .location-grid { gap: 5%; }
+    .location-heading { gap: 5%; }
+    .map-places > a { gap: 9px; }
+    .map-places strong { font-size: 12px; }
+    .map-places .icon { display: none; }
 }
 
 @media (max-width: 1000px) {
@@ -66,8 +69,12 @@
     .day-story { min-height: 570px; }
     .gallery-card { flex-basis: 65%; }
     .location { padding-top: 0; }
-    .location-grid { gap: 40px; }
-    .location-copy h2 { font-size: 44px; }
+    .location-heading { gap: 40px; }
+    .location-heading h2 { font-size: 44px; }
+    .map-caption > span:first-child { display: none; }
+    .map-scroll-hint { display: inline-flex; }
+    .map-places { grid-template-columns: 1fr 1fr; gap: 12px 25px; }
+    .map-places strong { font-size: 14px; }
     .faq-grid { grid-template-columns: .8fr 1.2fr; gap: 7%; }
     .faq-list summary { font-size: 17px; gap: 10px; }
     .contact-section { min-height: 630px; }
@@ -173,11 +180,18 @@
     .lightbox .lightbox-next { right: 22px; top: auto; bottom: 24px; }
     .lightbox-close { right: 17px; top: 17px; }
     .location { padding-top: 0; }
-    .location-grid { grid-template-columns: 1fr; gap: 40px; }
-    .location-copy h2 { font-size: 48px; }
-    .location-copy > p:not(.eyebrow) { max-width: 475px; font-size: 15px; margin-top: 25px; }
+    .location-heading { grid-template-columns: 1fr; gap: 25px; margin-bottom: 35px; }
+    .location-heading h2 { font-size: 48px; }
+    .location-copy > p { max-width: 475px; font-size: 15px; }
     .location-copy address { font-size: 14px; margin-top: 25px; }
     .location-copy .text-link { font-size: 14px; }
+    .map-canvas { min-width: 900px; }
+    .map-places { gap: 10px 16px; }
+    .map-places > a { padding-top: 17px; gap: 9px; }
+    .map-places strong { font-size: 12px; }
+    .map-places small { font-size: 10px; }
+    .map-marker-label strong { font-size: 13px; }
+    .map-marker-kurpati .map-marker-label strong { font-size: 23px; }
     .faq { padding-top: 12px; }
     .faq-grid { grid-template-columns: 1fr; gap: 35px; }
     .faq-grid > div > p:not(.eyebrow) { font-size: 15px; margin-top: 22px; }
@@ -187,7 +201,7 @@
     .contact-content { padding-block: 85px 120px; }
     .contact-content h2 { font-size: 62px; }
     .contact-content > p:not(.eyebrow) { font-size: 15px; margin-top: 24px; }
-    .contact-signature { font-size: 185px; right: -4px; bottom: -20px; }
+    .contact-signature { font-size: clamp(84px, 23vw, 165px); right: 22px; bottom: 18px; }
     .contact-photo img { object-position: 45% center; }
     .footer { padding-top: 38px; }
     .footer-main { display: grid; grid-template-columns: 1fr 1fr; gap: 28px 15px; padding-bottom: 28px; }
@@ -229,7 +243,7 @@
     .day-content h2 { font-size: 56px; }
     .day-moments p { font-size: 17px; }
     .gallery-photo { height: 270px; }
-    .location-copy h2 { font-size: 43px; }
+    .location-heading h2 { font-size: 43px; }
     .contact-content h2 { font-size: 55px; }
     .faq-list summary { font-size: 16px; }
     .footer-main { grid-template-columns: 1fr; }
@@ -242,7 +256,7 @@
     .hero h1 { font-size: 47px; }
     .hero-location { font-size: 10px; gap: 8px; }
     .hero-content { padding-top: 143px; }
-    h2, .location-copy h2 { font-size: 38px; }
+    h2, .location-heading h2 { font-size: 38px; }
     .hero-description p { font-size: 14px; }
     .hero-bottom { gap: 14px; }
     .hero-bottom > p { font-size: 9px; }

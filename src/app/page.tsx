@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import Motion from '@/components/Motion';
 import RequestDialog from '@/components/RequestDialog';
 import Icon from '@/components/Icon';
+import LocationMap from '@/components/LocationMap';
 import { asset } from '@/lib/asset';
 import { FAQ, ROOMS } from '@/lib/content';
 
@@ -57,7 +58,15 @@ export default function Page() {
 
                 <Gallery />
 
-                <section className="location section" id="location" aria-labelledby="location-title"><div className="container location-grid"><div className="location-copy" data-reveal><p className="eyebrow">Ваш Южный берег</p><h2 id="location-title">Место, к которому<br /><em>хочется вернуться</em></h2><p>Дворцы, приморские прогулки и любимые маршруты Большой Ялты. Откройте для себя Южный берег с новой стороны.</p><address><Icon name="pin" /><span>Крым, посёлок Курпаты<br />Алупкинское шоссе, 12</span></address><a className="text-link" href="https://yandex.ru/maps/?pt=34.133665,44.445482&z=15&l=map" target="_blank" rel="noreferrer">Открыть на карте <Icon /></a></div><div className="location-map" data-reveal><svg viewBox="0 0 620 510" fill="none" role="img" aria-label="Схема расположения Курпат на Южном берегу, между Ялтой и Ласточкиным гнездом"><defs><pattern id="map-grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0v32" stroke="#bcc7ba" strokeWidth=".4" /></pattern></defs><path fill="#e4e8dc" d="M0 0h620v510H0z" /><path fill="url(#map-grid)" d="M0 0h620v510H0z" /><path d="M0 308c72 36 114-39 181-18s77-21 124-30 51-44 101-54 112-40 214-8v312H0Z" fill="#c1d9dd" /><path d="M0 308c72 36 114-39 181-18s77-21 124-30 51-44 101-54 112-40 214-8" stroke="#85a8a8" strokeWidth="2" /><path d="M-20 260c67 28 135-46 195-27s87-25 131-38 59-36 101-47 112-15 230 2" stroke="#f8f7f0" strokeWidth="14" /><path d="M-20 260c67 28 135-46 195-27s87-25 131-38 59-36 101-47 112-15 230 2" stroke="#b0b5a5" strokeWidth="1" strokeDasharray="5 7" /><g className="map-hills" stroke="#c6ceb9"><path d="M35 78c94-63 116 74 224 2s122 35 214-28M-20 128c94-63 116 74 224 2s122 35 214-28M80 20c94-63 116 74 224 2s122 35 214-28" /></g><circle cx="446" cy="157" r="5" fill="#47646a" /><text x="461" y="160" fill="#47646a" fontSize="16">Ялта</text><circle cx="170" cy="284" r="5" fill="#47646a" /><text x="45" y="333" fill="#47646a" fontSize="13">Ласточкино гнездо</text><path d="m170 290-30 22H90" stroke="#47646a" /><circle cx="309" cy="252" r="34" fill="#f5f1e6" fillOpacity=".7" className="map-pulse" /><circle cx="309" cy="252" r="17" fill="#204c59" /><circle cx="309" cy="252" r="5" fill="#f5f1e6" /><path d="M309 232v-35" stroke="#204c59" /><rect x="260" y="166" width="98" height="30" rx="15" fill="#204c59" /><text x="276" y="186" fill="#fff" fontSize="16">Курпаты</text><text x="340" y="410" fill="#60858c" fontSize="22" fontStyle="italic">Чёрное море</text><path d="M559 43v43m-8-32 8-11 8 11" stroke="#47646a" /><text x="554" y="105" fill="#47646a" fontSize="12">С</text></svg><p>Схема расположения</p></div></div></section>
+                <section className="location section" id="location" aria-labelledby="location-title">
+                    <div className="container">
+                        <div className="location-heading" data-reveal>
+                            <div><p className="eyebrow">Ваш Южный берег</p><h2 id="location-title">Место, к которому<br /><em>хочется вернуться</em></h2></div>
+                            <div className="location-copy"><p>Ласточкино гнездо, Ливадийский дворец и набережная Ялты. Здесь легко придумать свой маршрут вдоль моря.</p><address><Icon name="pin" /><span>Крым, посёлок Курпаты<br />Алупкинское шоссе, 12</span></address><a className="text-link" href="https://yandex.ru/maps/?pt=34.133665,44.445482&z=15&l=map" target="_blank" rel="noreferrer">Открыть на карте <Icon /></a></div>
+                        </div>
+                        <LocationMap />
+                    </div>
+                </section>
 
                 <section className="faq section" aria-labelledby="faq-title"><div className="container faq-grid"><div data-reveal><p className="eyebrow">Перед знакомством</p><h2 id="faq-title">Важное<br /><em>об отдыхе</em></h2><p>Если остались вопросы,<br />давайте обсудим их лично.</p><button className="text-link" data-request="Обратный звонок: вопросы об отдыхе">Перезвоните мне <Icon /></button></div><div className="faq-list" data-reveal>{FAQ.map((item, index) => <details key={item.question}><summary><span className="faq-number">0{index + 1}</span>{item.question}<Icon name="plus" /></summary><div className="faq-answer"><p>{item.answer}</p></div></details>)}</div></div></section>
 
